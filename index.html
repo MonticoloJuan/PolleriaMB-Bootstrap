@@ -16,7 +16,9 @@
 <body>
     <div class="contenedor text-light bg-dark">
         <a href="index.html" class="img-encima"><img src="img/logo.jpg" alt="" width="10%" height="10%"></a>
-        <div class="centrado animate__animated animate__bounce animate__infinite animate__slower"> Pollería y almacen MB <br> Tu pollería de confianza</div>
+        <div class="centrado animate__animated animate__bounce animate__infinite animate__slower"> <h1>Pollería y almacen MB
+            <br> Tu pollería de confianza</h1>
+        </div>
         <img src="img/fondo.jpg" class="rounded mx-auto d-block" alt="..." width="100%" height="98%">
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,7 +45,7 @@
     </nav>
 
     <div class="row my-3 ms-auto">
-        <div class="carrusel col-lg-4 col-sm-12 bg-light pb-1 border border-dark">
+        <div class="carrusel col-lg-4 col-md-4 col-sm-12 bg-light pb-1 border border-dark">
             <h2 class=>Productos</h2>
             <p class=>En Polleria y Almacen MB trabajamos diariamente con productos de alta calidad como lo que
                 se mostrarán en las siguientes imagenes:</p>
@@ -55,16 +57,46 @@
                         class="bg-dark" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         class="bg-dark" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        class="bg-dark" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        class="bg-dark" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        class="bg-dark" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        class="bg-dark" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        class="bg-dark" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                        class="bg-dark" aria-label="Slide 9"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/albondiga.jpg" class="d-block w-100" alt="...">
+                        <img src="img/polloentero.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/patamuslo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pollotrozado.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pechuga.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pechugadeshuesada.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bife.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/milanesa.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="img/albondiga.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/albondiga.jpg" class="d-block w-100" alt="...">
+                        <img src="img/arrollado.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -79,7 +111,7 @@
                 </button>
             </div>
         </div>
-        <div class="col-lg-8 col-sm-12 fs-5">
+        <div class="col-lg-8 col-md-8 col-sm-12 fs-5">
             <h1>Quienes somos</h1>
             <p>Somos un pequeño emprendimientos el cual, a razón de la pandemia y a la falta de trabajo,
                 inicio en un pequeño garage siendo muy precario. Hoy en día trabajamos con muchos proveedores
@@ -127,6 +159,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--Boton Volver-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 </body>
 
 </html>
