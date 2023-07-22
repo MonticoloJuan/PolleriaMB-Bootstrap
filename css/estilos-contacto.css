@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(#FF9B9B, #FFD6A5, #FFFEC4, #CBFFA9);
+}
+
 .contenedor {
     position: relative;
     text-align: center;
@@ -19,8 +23,8 @@
     text-shadow: 20px 15px 7px red;
 }
 
-body {
-    background: linear-gradient(#FF9B9B, #FFD6A5, #FFFEC4, #CBFFA9);
+.img-fondo {
+    object-fit: cover;
 }
 
 #scroll {
@@ -35,7 +39,7 @@ body {
     display: none;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
-    border-radius: 60px
+    border-radius: 60px;
 }
 
 #scroll span {
@@ -56,3 +60,5 @@ body {
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
 }
+
+/*# sourceMappingURL=estilos-contacto.css.map */
